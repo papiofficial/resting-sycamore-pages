@@ -4,90 +4,112 @@
   if (!document.getElementById('rsa-ix-styles')) {
     var s = document.createElement('style');
     s.id = 'rsa-ix-styles';
-    s.textContent = `.rsa-ix-wrap{font-family:"Onest",system-ui,sans-serif;color:#1e293b;box-sizing:border-box}
-.rsa-ix-wrap *{box-sizing:border-box}
-.rsa-ix-header{background:#1e3a5f;color:#fff;padding:32px 40px}
-.rsa-ix-header h1{font-size:1.9rem;font-weight:800;margin-bottom:8px;line-height:1.2}
-.rsa-ix-header p{color:#94a3b8;font-size:0.95rem;max-width:600px;line-height:1.6}
-.rsa-ix-container{max-width:1100px;margin:0 auto;padding:36px 40px}
-.rsa-ix-intro{background:#f8fafc;border-left:4px solid #2563eb;padding:16px 20px;border-radius:0 8px 8px 0;margin-bottom:32px;font-size:0.95rem;line-height:1.7;color:#334155}
-.rsa-ix-section-title{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#64748b;margin-bottom:12px;margin-top:32px;border-bottom:1px solid #e2e8f0;padding-bottom:8px}
-.rsa-ix-letter-heading{font-size:1.4rem;font-weight:800;color:#0f172a;margin-bottom:10px}
-.rsa-ix-letter-group{margin-bottom:24px}
-.rsa-ix-link-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
-.rsa-ix-link-item a{display:block;padding:7px 12px;border-radius:6px;text-decoration:none;color:#1e40af;font-size:0.875rem;transition:background .1s;border:1px solid transparent}
-.rsa-ix-link-item a:hover{background:#eff6ff;border-color:#bfdbfe}
-.rsa-ix-link-item .sub{font-size:0.75rem;color:#94a3b8;margin-top:1px}
-.rsa-ix-state-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-bottom:36px}
-.rsa-ix-state-card{border:1px solid #e2e8f0;border-radius:10px;padding:22px;text-decoration:none;color:inherit;display:block;transition:box-shadow .15s}
-.rsa-ix-state-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);border-color:#2563eb}
-.rsa-ix-state-card .count{font-size:2.3rem;font-weight:800;color:#2563eb;line-height:1}
-.rsa-ix-state-card .label{font-size:0.95rem;font-weight:600;margin-top:6px}
-.rsa-ix-state-card .sub{font-size:0.8rem;color:#64748b;margin-top:4px}
-.rsa-ix-stats-bar{display:flex;gap:24px;margin-bottom:24px;flex-wrap:wrap}
-.rsa-ix-stat .num{font-size:1.7rem;font-weight:800;color:#0f172a}
-.rsa-ix-stat .lbl{font-size:0.75rem;color:#64748b;text-transform:uppercase;letter-spacing:.04em}
-.rsa-ix-table{width:100%;border-collapse:collapse;font-size:0.875rem}
-.rsa-ix-table th{text-align:left;padding:10px 14px;background:#f8fafc;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#475569;border-bottom:2px solid #e2e8f0}
-.rsa-ix-table td{padding:9px 14px;border-bottom:1px solid #f1f5f9}
-.rsa-ix-table tr:hover td{background:#f8fafc}
-.rsa-ix-pills{display:flex;flex-wrap:wrap;gap:6px}
-.rsa-ix-pill a{display:inline-block;padding:3px 10px;background:#eff6ff;color:#1d4ed8;border-radius:999px;font-size:0.78rem;text-decoration:none;font-weight:500}
-.rsa-ix-pill a:hover{background:#dbeafe}
-.rsa-ix-related{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;padding-top:22px;border-top:1px solid #e2e8f0}
-.rsa-ix-related a{padding:7px 14px;border:1px solid #e2e8f0;border-radius:6px;text-decoration:none;color:#475569;font-size:0.85rem}
-.rsa-ix-related a:hover{border-color:#2563eb;color:#2563eb}
-.rsa-ix-card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-bottom:32px}
-.rsa-ix-card{border:1px solid #e2e8f0;border-radius:10px;padding:22px;text-decoration:none;color:inherit;display:block;transition:box-shadow .15s}
-.rsa-ix-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);border-color:#2563eb}
-.rsa-ix-card h3{font-size:1.05rem;font-weight:700;color:#0f172a;margin-bottom:6px}
-.rsa-ix-card p{font-size:0.85rem;color:#64748b;line-height:1.5}
-.rsa-ix-tag{display:inline-block;padding:2px 8px;background:#f0fdf4;color:#166534;border-radius:4px;font-size:0.75rem;font-weight:600;margin-top:8px}
-.rsa-ix-faq-item{border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin-bottom:12px}
-.rsa-ix-faq-item h3{font-size:0.95rem;font-weight:700;color:#0f172a;margin-bottom:8px}
-.rsa-ix-faq-item p{font-size:0.875rem;color:#334155;line-height:1.65}
-.rsa-ix-faq-item a{color:#2563eb;text-decoration:none}
-.rsa-ix-faq-item a:hover{text-decoration:underline}
-.rsa-ix-toc{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px 24px;margin-bottom:32px}
-.rsa-ix-toc h2{font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin-bottom:12px}
-.rsa-ix-toc ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.rsa-ix-toc li a{padding:5px 12px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;text-decoration:none;color:#2563eb;font-size:0.85rem}
-.rsa-ix-toc li a:hover{border-color:#2563eb}
-.rsa-ix-plan-card{border:1px solid #e2e8f0;border-radius:10px;padding:22px;margin-bottom:14px;display:flex;align-items:flex-start;gap:16px;text-decoration:none;color:inherit;transition:box-shadow .15s}
-.rsa-ix-plan-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);border-color:#2563eb}
-.rsa-ix-plan-card .badge{display:inline-block;padding:3px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;background:#dbeafe;color:#1e40af}
-.rsa-ix-article-list{list-style:none}
-.rsa-ix-article-item{border-bottom:1px solid #e2e8f0;padding:16px 0}
-.rsa-ix-article-item:last-child{border-bottom:none}
-.rsa-ix-article-item a{font-size:0.95rem;font-weight:600;color:#1e40af;text-decoration:none}
-.rsa-ix-article-item a:hover{text-decoration:underline}
-.rsa-ix-article-item .meta{font-size:0.8rem;color:#64748b;margin-top:4px}
-.rsa-ix-cta{background:#1e3a5f;color:#fff;border-radius:10px;padding:28px 32px;margin-top:36px;text-align:center}
-.rsa-ix-cta h2{font-size:1.2rem;font-weight:700;margin-bottom:8px}
-.rsa-ix-cta p{font-size:0.9rem;color:#94a3b8;margin-bottom:16px}
-.rsa-ix-cta a{display:inline-block;background:#2563eb;color:#fff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.9rem}
-.rsa-ix-cta a:hover{background:#1d4ed8}
-@media(max-width:640px){
-  .rsa-ix-header{padding:24px 20px}
-  .rsa-ix-container{padding:24px 20px}
-  .rsa-ix-stats-bar{gap:16px}
-  .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}
-.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
-.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
-.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
-.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
-.rsa-ix-breadcrumb a{color:white;text-decoration:none}
-.rsa-ix-breadcrumb a:hover{text-decoration:underline}
-.rsa-ix-breadcrumb span{margin:0 4px}
-.rsa-ix-bc-current{opacity:0.9}`;
+    s.textContent = `.rsa-ix-wrap { font-family: 'Onest', sans-serif; color: #0b1220; background: #f6f7fa; }
+.rsa-ix-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); color: white; padding: 48px 24px 40px; }
+.rsa-ix-hero h1 { font-family: 'Onest', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; line-height: 1.2; margin: 12px 0 10px; letter-spacing: -0.5px; }
+.rsa-ix-hero p { font-size: 17px; opacity: 0.88; max-width: 620px; line-height: 1.6; margin: 0; }
+.rsa-ix-breadcrumb { font-size: 13px; opacity: 0.72; margin-bottom: 10px; }
+.rsa-ix-breadcrumb a { color: white; text-decoration: none; }
+.rsa-ix-breadcrumb a:hover { text-decoration: underline; }
+.rsa-ix-breadcrumb span { margin: 0 5px; opacity: 0.6; }
+.rsa-ix-bc-current { opacity: 0.9; }
+.rsa-ix-content { max-width: 940px; margin: 0 auto; padding: 40px 24px 64px; }
+.rsa-ix-stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+.rsa-ix-stat { background: white; border: 1px solid #e9eaee; border-radius: 10px; padding: 14px 20px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-stat .num { font-size: 1.75rem; font-weight: 700; line-height: 1; color: #1e3a5f; }
+.rsa-ix-stat .lbl { font-size: 11px; color: #5a6578; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
+.rsa-ix-intro { background: white; border-left: 3px solid #2563eb; border-radius: 0 10px 10px 0; padding: 14px 18px; margin-bottom: 28px; font-size: 14px; line-height: 1.7; color: #2a3446; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #5a6578; margin-bottom: 12px; }
+.rsa-ix-carrier-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; background: white; padding: 12px 16px; border-radius: 10px; border: 1px solid #e9eaee; }
+.rsa-ix-carrier-nav a { display: inline-block; padding: 4px 10px; border-radius: 6px; background: #f6f7fa; color: #2a3446; font-size: 12px; font-weight: 600; text-decoration: none; border: 1px solid #e9eaee; transition: all 0.12s; }
+.rsa-ix-carrier-nav a:hover { background: #1e3a5f; color: white; border-color: #1e3a5f; }
+.rsa-ix-card { background: white; border: 1px solid #e9eaee; border-radius: 10px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); margin-bottom: 16px; overflow: hidden; }
+.rsa-ix-card-header { padding: 14px 20px; border-bottom: 1px solid #eef0f5; display: flex; align-items: center; gap: 10px; border-left: 3px solid #2563eb; }
+.rsa-ix-card-header .name { font-weight: 700; font-size: 15px; color: #0b1220; }
+.rsa-ix-card-header .link { font-size: 12px; color: #2563eb; text-decoration: none; margin-left: 6px; }
+.rsa-ix-card-header .link:hover { text-decoration: underline; }
+.rsa-ix-card-header .count { margin-left: auto; font-size: 11px; background: #f6f7fa; color: #5a6578; padding: 2px 8px; border-radius: 999px; font-weight: 600; border: 1px solid #e9eaee; }
+.rsa-ix-list { list-style: none; margin: 0; padding: 0; }
+.rsa-ix-list li a { display: flex; align-items: center; gap: 10px; padding: 10px 20px; text-decoration: none; color: #0b1220; font-size: 14px; border-bottom: 1px solid #f6f7fa; transition: background 0.1s; }
+.rsa-ix-list li:last-child a { border-bottom: none; }
+.rsa-ix-list li a:hover { background: #f6f7fa; }
+.rsa-ix-list li a .item-name { flex: 1; color: #2563eb; font-weight: 500; }
+.rsa-ix-list li a:hover .item-name { color: #1d4ed8; }
+.rsa-ix-list li a .badge { font-size: 11px; font-weight: 600; padding: 2px 7px; border-radius: 5px; background: #eef0f5; color: #2a3446; flex-shrink: 0; white-space: nowrap; }
+.rsa-ix-list li a .badge.snp { background: #f9e9e9; color: #c62828; }
+.rsa-ix-list li a .badge.pdp { background: #fef0d4; color: #6f4a03; }
+.rsa-ix-list li a .badge.hmo { background: #e7f2ee; color: #1e5a45; }
+.rsa-ix-list li a .badge.ppo { background: #eff6ff; color: #1d4ed8; }
+.rsa-ix-alpha { margin-bottom: 8px; }
+.rsa-ix-alpha-letter { font-size: 13px; font-weight: 700; color: #1e3a5f; background: #eef0f5; padding: 6px 20px; border-left: 3px solid #2563eb; margin: 0; }
+.rsa-ix-alpha-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+.rsa-ix-alpha-grid a { display: block; padding: 9px 20px; font-size: 13px; color: #2563eb; text-decoration: none; border-bottom: 1px solid #f6f7fa; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rsa-ix-alpha-grid a:hover { background: #f6f7fa; color: #1d4ed8; }
+@media(max-width: 640px) { .rsa-ix-alpha-grid { grid-template-columns: repeat(2,1fr); } }
+.rsa-ix-state-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; }
+@media(max-width: 700px) { .rsa-ix-state-grid { grid-template-columns: 1fr; } }
+.rsa-ix-state-card { background: white; border: 1px solid #e9eaee; border-radius: 10px; padding: 24px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-state-card h2 { font-size: 20px; font-weight: 700; color: #0b1220; margin: 0 0 4px; }
+.rsa-ix-state-card .count { font-size: 13px; color: #5a6578; margin-bottom: 16px; }
+.rsa-ix-state-card a.btn { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 9px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; }
+.rsa-ix-state-card a.btn:hover { background: #1d4ed8; }
+.rsa-ix-topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 32px; }
+@media(max-width: 640px) { .rsa-ix-topic-grid { grid-template-columns: 1fr; } }
+.rsa-ix-topic-card { background: white; border: 1px solid #e9eaee; border-radius: 10px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-topic-card h2 { font-size: 16px; font-weight: 700; color: #0b1220; margin: 0 0 4px; }
+.rsa-ix-topic-card .count { font-size: 12px; color: #5a6578; margin-bottom: 12px; }
+.rsa-ix-topic-card a.btn { font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600; }
+.rsa-ix-topic-card a.btn:hover { text-decoration: underline; }
+.rsa-ix-qa-list { list-style: none; margin: 0; padding: 0; }
+.rsa-ix-qa-list li { border-bottom: 1px solid #e9eaee; }
+.rsa-ix-qa-list li:last-child { border-bottom: none; }
+.rsa-ix-qa-list li a { display: block; padding: 13px 0; font-size: 15px; color: #2563eb; text-decoration: none; line-height: 1.5; font-weight: 500; }
+.rsa-ix-qa-list li a:hover { color: #1d4ed8; }
+.rsa-ix-qa-list li a::before { content: "Q: "; color: #5a6578; font-weight: 400; font-size: 13px; }
+.rsa-ix-geo-section { margin-bottom: 24px; }
+.rsa-ix-geo-section h2 { font-size: 16px; font-weight: 700; color: #1e3a5f; padding: 8px 16px; background: #eef0f5; border-radius: 8px; margin: 0 0 8px; }
+.rsa-ix-geo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; background: white; border: 1px solid #e9eaee; border-radius: 10px; overflow: hidden; }
+.rsa-ix-geo-grid a { display: block; padding: 9px 14px; font-size: 13px; color: #2563eb; text-decoration: none; border-bottom: 1px solid #f6f7fa; font-weight: 500; }
+.rsa-ix-geo-grid a:hover { background: #f6f7fa; color: #1d4ed8; }
+@media(max-width: 640px) { .rsa-ix-geo-grid { grid-template-columns: repeat(2,1fr); } }
+.rsa-ix-related { display: flex; gap: 8px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid #e9eaee; margin-top: 32px; }
+.rsa-ix-related a { padding: 7px 14px; border: 1px solid #e9eaee; border-radius: 8px; font-size: 13px; color: #2a3446; text-decoration: none; background: white; font-weight: 500; }
+.rsa-ix-related a:hover { border-color: #2563eb; color: #2563eb; }
+.rsa-ix-cluster { margin-bottom: 32px; }
+.rsa-ix-cluster-header { font-size: 18px; font-weight: 700; color: #0b1220; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #eef0f5; }
+.rsa-ix-cluster-hub a { display: block; padding: 10px 16px; background: #eff6ff; border-radius: 8px; color: #1d4ed8; text-decoration: none; font-weight: 600; font-size: 15px; margin-bottom: 6px; border: 1px solid #dbeafe; }
+.rsa-ix-cluster-hub a:hover { background: #dbeafe; }
+.rsa-ix-cluster-spokes { list-style: none; padding: 0; margin: 0; }
+.rsa-ix-cluster-spokes li a { display: block; padding: 8px 16px 8px 28px; font-size: 14px; color: #2563eb; text-decoration: none; border-bottom: 1px solid #f6f7fa; }
+.rsa-ix-cluster-spokes li a::before { content: "↳ "; color: #5a6578; }
+.rsa-ix-cluster-spokes li a:hover { color: #1d4ed8; background: #f6f7fa; }
+.rsa-ix-specialty-table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; border: 1px solid #e9eaee; font-size: 14px; }
+.rsa-ix-specialty-table th { background: #1e3a5f; color: white; padding: 10px 16px; text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+.rsa-ix-specialty-table td { padding: 10px 16px; border-bottom: 1px solid #f6f7fa; }
+.rsa-ix-specialty-table tr:last-child td { border-bottom: none; }
+.rsa-ix-specialty-table tr:hover td { background: #f6f7fa; }
+.rsa-ix-specialty-table a { color: #2563eb; text-decoration: none; font-weight: 500; }
+.rsa-ix-specialty-table a:hover { text-decoration: underline; }
+.rsa-ix-carrier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 32px; }
+@media(max-width: 640px) { .rsa-ix-carrier-grid { grid-template-columns: 1fr; } }
+.rsa-ix-carrier-card { background: white; border: 1px solid #e9eaee; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-carrier-card .carrier-name { font-size: 15px; font-weight: 700; color: #0b1220; margin-bottom: 4px; }
+.rsa-ix-carrier-card .carrier-meta { font-size: 12px; color: #5a6578; margin-bottom: 12px; }
+.rsa-ix-carrier-card a { font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600; }
+.rsa-ix-carrier-card a:hover { text-decoration: underline; }
+.rsa-ix-plantype-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+@media(max-width: 640px) { .rsa-ix-plantype-grid { grid-template-columns: 1fr; } }
+.rsa-ix-plantype-card { background: white; border: 1px solid #e9eaee; border-radius: 10px; padding: 20px 24px; box-shadow: 0 1px 3px rgba(11,18,32,0.06); }
+.rsa-ix-plantype-card h2 { font-size: 17px; font-weight: 700; color: #0b1220; margin: 0 0 8px; }
+.rsa-ix-plantype-card p { font-size: 14px; color: #5a6578; line-height: 1.6; margin-bottom: 12px; }
+.rsa-ix-plantype-card a { font-size: 13px; color: #2563eb; text-decoration: none; font-weight: 600; }`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <span class="rsa-ix-bc-current">Questions</span></div><h1>Medicare Questions &amp; Answers</h1><p>304 answered Medicare questions organized by topic.</p></div><div class="rsa-ix-container">
-  <div class="stats-row">
-    <div class="stat"><div class="num">304</div><div class="lbl">Questions Answered</div></div>
-    <div class="stat"><div class="num">9</div><div class="lbl">Topic Categories</div></div>
-    <div class="stat"><div class="num">3</div><div class="lbl">States Covered</div></div>
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <span class="rsa-ix-bc-current">Questions</span></div><h1>Medicare Questions &amp; Answers</h1><p>304 answered Medicare questions organized by topic.</p></div><div class="rsa-ix-content">
+  <div class="rsa-ix-stats">
+    <div class="rsa-ix-stat"><div class="num">304</div><div class="lbl">Questions Answered</div></div>
+    <div class="rsa-ix-stat"><div class="num">9</div><div class="lbl">Topic Categories</div></div>
+    <div class="rsa-ix-stat"><div class="num">3</div><div class="lbl">States Covered</div></div>
   </div>
 
   <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
@@ -240,7 +262,7 @@
   </div>
 </div>
 
-  <div class="related">
+  <div class="rsa-ix-related">
     <a href="https://www.restingsycamore.com/medicare/carriers">Insurance Carriers</a>
     <a href="https://www.restingsycamore.com/medicare/plan-types">Plan Types Explained</a>
     <a href="https://www.restingsycamore.com/medicare/compare-medicare-plans">Compare Plans</a>
