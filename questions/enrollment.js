@@ -72,13 +72,18 @@
   .rsa-ix-container{padding:24px 20px}
   .rsa-ix-stats-bar{gap:16px}
   .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}`;
+}
+.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
+.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
+.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
+.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
+.rsa-ix-breadcrumb a{color:white;text-decoration:none}
+.rsa-ix-breadcrumb a:hover{text-decoration:underline}
+.rsa-ix-breadcrumb span{margin:0 4px}
+.rsa-ix-bc-current{opacity:0.9}`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="page-header" style="background:#2563eb;">
-  <h1>📋 Enrollment & Eligibility</h1>
-  <p class="tagline">When to sign up, what windows to know, and who qualifies for Medicare.</p>
-</div>
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare/questions">Questions</a> <span>›</span> <span class="rsa-ix-bc-current">Enrollment</span></div><h1>Medicare Enrollment Questions</h1><p>40 answered questions about when and how to enroll in Medicare.</p></div>
 <div class="rsa-ix-container">
   <div class="intro-card">Getting Medicare enrollment right is the most time-sensitive decision you'll make. Miss a deadline and you could pay a penalty for life. Sign up too early and you might create problems with your employer coverage or HSA. These questions cover every enrollment scenario — from turning 65 to delayed enrollment to Special Enrollment Periods.</div>
 

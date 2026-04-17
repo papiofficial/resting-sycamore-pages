@@ -72,10 +72,18 @@
   .rsa-ix-container{padding:24px 20px}
   .rsa-ix-stats-bar{gap:16px}
   .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}`;
+}
+.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
+.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
+.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
+.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
+.rsa-ix-breadcrumb a{color:white;text-decoration:none}
+.rsa-ix-breadcrumb a:hover{text-decoration:underline}
+.rsa-ix-breadcrumb span{margin:0 4px}
+.rsa-ix-bc-current{opacity:0.9}`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-header"><h1>Medicare Care Facilities Directory</h1><p>Browse 388 Medicare-covered care facilities across Ohio, Pennsylvania, and Utah — including skilled nursing facilities, rehabilitation centers, and long-term care.</p></div><div class="rsa-ix-container">
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <span class="rsa-ix-bc-current">Providers</span></div><h1>Medicare Care Facilities</h1><p>Find Medicare-certified skilled nursing and rehabilitation facilities in Utah, Ohio, and Pennsylvania.</p></div><div class="rsa-ix-container">
   <div class="rsa-ix-intro">
     <strong>Medicare covers short-term care in skilled nursing facilities</strong> — but only under specific conditions,
     and only at facilities that are Medicare-certified. If you or a family member needs post-hospital care,

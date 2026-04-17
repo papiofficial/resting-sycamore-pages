@@ -72,12 +72,18 @@
   .rsa-ix-container{padding:24px 20px}
   .rsa-ix-stats-bar{gap:16px}
   .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}`;
+}
+.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
+.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
+.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
+.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
+.rsa-ix-breadcrumb a{color:white;text-decoration:none}
+.rsa-ix-breadcrumb a:hover{text-decoration:underline}
+.rsa-ix-breadcrumb span{margin:0 4px}
+.rsa-ix-bc-current{opacity:0.9}`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="bc"><a href="https://www.restingsycamore.com">Home</a> → <a href="https://www.restingsycamore.com/medicare">Medicare</a> → <span>Articles</span></div>
-<div class="hdr"><h1>Medicare Articles &amp; Guides</h1>
-<p>In-depth guides on every Medicare topic — enrollment, costs, Medicare Advantage, Medigap, Part D, working past 65, and more.</p></div>
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <span class="rsa-ix-bc-current">Articles</span></div><h1>Medicare Articles &amp; Guides</h1><p>149 in-depth guides organized by topic to help you understand and choose Medicare coverage.</p></div>
 <div class="wrap">
 <div class="stats">
   <div class="stat"><div class="n">149</div><div class="l">Articles</div></div>

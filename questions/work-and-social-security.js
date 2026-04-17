@@ -72,13 +72,18 @@
   .rsa-ix-container{padding:24px 20px}
   .rsa-ix-stats-bar{gap:16px}
   .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}`;
+}
+.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
+.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
+.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
+.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
+.rsa-ix-breadcrumb a{color:white;text-decoration:none}
+.rsa-ix-breadcrumb a:hover{text-decoration:underline}
+.rsa-ix-breadcrumb span{margin:0 4px}
+.rsa-ix-bc-current{opacity:0.9}`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="page-header" style="background:#d97706;">
-  <h1>💼 Medicare & Work / Social Security</h1>
-  <p class="tagline">Working past 65, employer coverage, HSAs, COBRA, Social Security, and VA benefits.</p>
-</div>
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare/questions">Questions</a> <span>›</span> <span class="rsa-ix-bc-current">Work &amp; Social Security</span></div><h1>Medicare, Work &amp; Social Security</h1><p>36 answered questions about Medicare and working past 65 or Social Security.</p></div>
 <div class="rsa-ix-container">
   <div class="intro-card">If you're still working at 65 — or your spouse is — Medicare's rules get more complicated. When employer coverage is primary, you may be able to delay Part B without penalty. But the rules differ based on employer size. This section also covers HSA compatibility, COBRA, Social Security timing, disability Medicare, and how VA benefits interact with Medicare.</div>
 

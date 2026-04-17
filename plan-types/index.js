@@ -72,12 +72,18 @@
   .rsa-ix-container{padding:24px 20px}
   .rsa-ix-stats-bar{gap:16px}
   .rsa-ix-state-cards,.rsa-ix-card-grid{grid-template-columns:1fr}
-}`;
+}
+.rsa-ix-hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);color:white;padding:48px 24px 40px;margin:-8px -8px 0}
+.rsa-ix-hero h1{font-family:"Onest",system-ui,sans-serif;font-size:clamp(24px,4vw,36px);font-weight:700;margin:12px 0 8px;letter-spacing:-0.3px}
+.rsa-ix-hero p{font-size:16px;opacity:0.85;max-width:600px;line-height:1.6;margin:0}
+.rsa-ix-breadcrumb{font-size:13px;opacity:0.75;margin-bottom:8px}
+.rsa-ix-breadcrumb a{color:white;text-decoration:none}
+.rsa-ix-breadcrumb a:hover{text-decoration:underline}
+.rsa-ix-breadcrumb span{margin:0 4px}
+.rsa-ix-bc-current{opacity:0.9}`;
     document.head.appendChild(s);
   }
-  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-header"><h1>Medicare Plan Types Explained</h1><p>Medicare isn't one-size-fits-all. There are 13 distinct plan types across
-     Medicare Advantage, Medigap, and Part D — each with different costs, networks,
-     and tradeoffs. Find the right starting point below.</p></div><div class="rsa-ix-container">
+  el.innerHTML = `<div class="rsa-ix-wrap"><div class="rsa-ix-hero"><div class="rsa-ix-breadcrumb"><a href="https://www.restingsycamore.com">Home</a> <span>›</span> <a href="https://www.restingsycamore.com/medicare">Medicare</a> <span>›</span> <span class="rsa-ix-bc-current">Plan Types</span></div><h1>Medicare Plan Types</h1><p>Understand the differences between Medicare Advantage HMO, PPO, SNP, and Part D plans.</p></div><div class="rsa-ix-container">
   <div class="stats-row">
     <div class="stat"><div class="num">13</div><div class="lbl">Plan Types</div></div>
     <div class="stat"><div class="num">7</div><div class="lbl">Medicare Advantage</div></div>
