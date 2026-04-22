@@ -10,7 +10,6 @@ window.rsaPTrender = function(uid, cdnBase, total) {
     s.id = 'rsa-pt-css';
     s.textContent = [
       '.rsa-pt-wrap{font-family:system-ui,sans-serif;color:#0b1220}',
-      '.rsa-pt-h2{font-size:1.4rem;font-weight:700;color:#1e3a5f;margin:0 0 12px}',
       '.rsa-pt-search{width:100%;padding:9px 14px;border:1px solid #e5e7eb;border-radius:8px;font-size:14px;margin-bottom:8px;box-sizing:border-box}',
       '.rsa-pt-search:focus{outline:none;border-color:#2563eb}',
       '.rsa-pt-meta{display:flex;justify-content:space-between;font-size:13px;color:#6b7280;margin:0 0 10px}',
@@ -53,7 +52,6 @@ window.rsaPTrender = function(uid, cdnBase, total) {
       }
       wrap.innerHTML = [
         '<div class="rsa-pt-wrap">',
-        '<h2 class="rsa-pt-h2">Medicare Advantage Plans in '+uid.charAt(0).toUpperCase()+uid.slice(1)+'</h2>',
         '<input class="rsa-pt-search" type="text" placeholder="Search plans or carriers...">',
         '<div class="rsa-pt-meta"><span class="rsa-ct">Showing '+shown+' of '+plans.length+' plans</span><span>2026 plan year</span></div>',
         '<div style="overflow-x:auto"><table class="rsa-pt-tbl"><thead><tr>',
