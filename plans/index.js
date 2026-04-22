@@ -32,17 +32,14 @@
   <div class="rsa-ix-intro">Browse Medicare Advantage, Supplement, and Part D plans available in Utah, Ohio, and Pennsylvania. Select a state to see all plans organized by carrier.</div>
   <div class="rsa-ix-state-grid">
     <div class="rsa-ix-state-card">
-      <h2>Utah</h2>
       <div class="count">33 plans &middot; 6 carriers</div>
       <a class="btn" href="https://www.restingsycamore.com/medicare/plans/utah">View Utah Plans &rarr;</a>
     </div>
     <div class="rsa-ix-state-card">
-      <h2>Ohio</h2>
       <div class="count">170 plans &middot; 21 carriers</div>
       <a class="btn" href="https://www.restingsycamore.com/medicare/plans/ohio">View Ohio Plans &rarr;</a>
     </div>
     <div class="rsa-ix-state-card">
-      <h2>Pennsylvania</h2>
       <div class="count">216 plans &middot; 20 carriers</div>
       <a class="btn" href="https://www.restingsycamore.com/medicare/plans/pennsylvania">View Pennsylvania Plans &rarr;</a>
     </div>
